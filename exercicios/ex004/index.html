@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = prompt('Qual o seu nome?')
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras. <br>`)
+        document.write(`Seu nome em maíusculas é ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+        /*
+        Formatação de variáveis numéricas para moedas:
+        var=num.toLocaleString('pt-BR', {style: 'currency', currencyy: 'BRL'})
+        var=num.toLocaleString('pt-BR', {style: 'currency', currencyy: 'USD'})
+        var=num.toLocaleString('pt-BR', {style: 'currency', currencyy: 'EUR'})
+        */
+    </script>
+
+</body>
+
+</html>

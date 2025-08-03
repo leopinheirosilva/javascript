@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+
+<body>
+    <h1>Processo de Imigração</h1>
+
+    País em que nasceu: <input type="text" name="pais" id="pais">
+
+    <input type="button" value="verificar" onclick="verNacional()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verNacional() {
+            var pais = document.getElementById('pais')
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>Você nasceu em: ${pais.value}</p>`
+            if (pais.value == 'Brasil'){
+                res.innerHTML += '<p>Você é brasileiro</p>'
+            } else{
+                res.innerHTML += '<p>Você é estrangeiro</p>'
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
