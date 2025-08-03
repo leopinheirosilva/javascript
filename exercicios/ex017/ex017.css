@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(79, 121, 184);
+    font-family: arial;
+}
+
+h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.445);
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    padding-top: 20px;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
+}
+
+p#res{
+    padding-top: 50px;
+    text-align: center;
+}
+
+div#imagem{
+    background-color: black;
+    margin: auto;
+    margin-top: 10px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+form {
+    padding-top: 10px;
+}
+
+input#verificar{
+    margin-top: 10px;
+}
+
+a{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
+}
