@@ -7,8 +7,8 @@ function verificar() {
         alert('Verifique os dados e tente novamente')
     } else {
         var formSexo = document.getElementsByName('sexo') //[0,1]
+        var genero = ''                                  //declaração da variável vazia
         var idade = ano - Number(formAno.value)
-        var genero = ''                         //declaração da variável vazia
         var img = document.createElement('img') // irá criar uma tag img
         img.setAttribute('id', 'foto')          //definiu a tag img com o id 'foto'
         if (formSexo[0].checked) {
@@ -28,7 +28,7 @@ function verificar() {
             }
         } else if (formSexo[1].checked) {
             genero = 'Mulher'
-            if (idade < 10) {
+            if (idade >=0 && idade < 10) {
                 img.setAttribute('src', 'midias/crianca-f.png')
                 img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
             } else if (idade < 21) {
