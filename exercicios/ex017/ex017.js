@@ -28,7 +28,7 @@ function verificar() {
             }
         } else if (formSexo[1].checked) {  //verifica qual caixa está selecionada no form Sexo
             genero = 'Mulher'
-            if (idade >=0 && idade < 10) {
+            if (idade >= 0 && idade < 10) {
                 img.setAttribute('src', 'midias/crianca-f.png')
                 img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
             } else if (idade < 21) {
