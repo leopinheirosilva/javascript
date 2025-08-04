@@ -17,18 +17,17 @@
             <input type="number" name="ano" id="ano">
         </form>
 
-        <form action="#">
-            <label for="sexo">Sexo:</label>
-            <input type="radio" name="sexo" id="sexo"> Masculino
-            <input type="radio" name="sexo" id="sexo"> Feminino
+        <form action="#"> Sexo:
+            <input type="radio" name="sexo" id="M" checked>
+            <label for="M"> Masculino</label>
+            <input type="radio" name="sexo" id="F"> 
+            <label for="F">Feminino</label>
         </form>
         
-        <input onclick="verificar()" id="verificar" type="button" value="Verificar">
+        <input id="verificar" type="button" value="Verificar" onclick="verificar()">
 
-        <p id="res">resultado</p>
-
-        <div id="imagem">
-
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
         </div>
     </main>
 

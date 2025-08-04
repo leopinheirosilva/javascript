@@ -24,23 +24,12 @@ main{
     padding: 10px;
     padding-top: 20px;
     width: 500px;
-    height: 500px;
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
 }
 
-p#res{
-    padding-top: 50px;
-    text-align: center;
-}
-
-div#imagem{
-    background-color: black;
-    margin: auto;
-    margin-top: 10px;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
+div#res{
+    padding-top: 20px;
 }
 
 form {
