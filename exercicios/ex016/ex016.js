@@ -4,7 +4,6 @@ var min = hrAtual.getMinutes().toString().padStart(2, '0')
 var txtHora = document.getElementsByTagName('p')[0]
 var imagem = document.getElementById('imagem')
 txtHora.innerHTML = `Agora são ${hora}:${min} horas.`
-var hora = 22
 if (hora < 12) {
     document.body.style.background = '#83B6C7'
     imagem.style.backgroundImage = 'url(midias/foto-dia.jpg)'
