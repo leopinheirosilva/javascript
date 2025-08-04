@@ -11,7 +11,7 @@ function verificar() {
         var idade = ano - Number(formAno.value)
         var img = document.createElement('img') // irá criar uma tag img
         img.setAttribute('id', 'foto')          //definiu a tag img com o id 'foto'
-        if (formSexo[0].checked) {
+        if (formSexo[0].checked) {  //verifica qual caixa está selecionada no form Sexo
             genero = 'Homem'
             if (idade >= 0 && idade < 10) {
                 img.setAttribute('src', 'midias/crianca-m.png')
@@ -26,7 +26,7 @@ function verificar() {
                 img.setAttribute('src', 'midias/idoso-m.png')
                 img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
             }
-        } else if (formSexo[1].checked) {
+        } else if (formSexo[1].checked) {  //verifica qual caixa está selecionada no form Sexo
             genero = 'Mulher'
             if (idade >=0 && idade < 10) {
                 img.setAttribute('src', 'midias/crianca-f.png')
