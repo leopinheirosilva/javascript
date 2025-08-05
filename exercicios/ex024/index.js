@@ -1,4 +1,7 @@
 let valores = [8, 1, 7, 4, 2, 9]
-for ( let pos = 0; pos < valores.length; pos++) {
+for (let pos = 0; pos < valores.length; pos++) {
     console.log(`${valores[pos]}`)
+}
+for (let pos in valores) { // forma simplificada (funciona somente com arrays)
+    console.log(valores[pos])
 }
