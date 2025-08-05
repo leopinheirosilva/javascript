@@ -1,17 +1,17 @@
 function verificar() {
     var data = new Date()
-    var ano = data.getFullYear()
-    var formAno = document.getElementById('ano')
+    var anoAtual = data.getFullYear()
+    var ano = document.getElementById('ano')
     var res = document.getElementById('res')
-    if (formAno.value.length == 0 || Number(formAno.value) > ano) {
+    if (ano.value.length == 0 || Number(ano.value) > anoAtual) {
         alert('Verifique os dados e tente novamente')
     } else {
-        var formSexo = document.getElementsByName('sexo') //[0,1]
+        var sexo = document.getElementsByName('sexo') //[0,1]
         var genero = ''                                  //declaração da variável vazia
-        var idade = ano - Number(formAno.value)
-        var img = document.createElement('img') // irá criar uma tag img
+        var idade = anoAtual - Number(ano.value)
+        var img = document.createElement('img') //criaçao de uma tag img
         img.setAttribute('id', 'foto')          //definiu a tag img com o id 'foto'
-        if (formSexo[0].checked) {  //verifica qual caixa está selecionada no form Sexo
+        if (sexo[0].checked) {  //verifica qual caixa está selecionada no form sexo
             genero = 'Homem'
             if (idade >= 0 && idade < 10) {
                 img.setAttribute('src', 'midias/crianca-m.png')
@@ -26,7 +26,7 @@ function verificar() {
                 img.setAttribute('src', 'midias/idoso-m.png')
                 img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
             }
-        } else if (formSexo[1].checked) {  //verifica qual caixa está selecionada no form Sexo
+        } else if (sexo[1].checked) {  //verifica qual caixa está selecionada no form sexo
             genero = 'Mulher'
             if (idade >= 0 && idade < 10) {
                 img.setAttribute('src', 'midias/crianca-f.png')
@@ -44,6 +44,6 @@ function verificar() {
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
-        res.appendChild(img)    //adicionar o elemento 'img'
+        res.appendChild(img)    //adiciona a variavel img
     }
 }
