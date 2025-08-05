@@ -37,10 +37,10 @@ function finalizar() {
         let menor = valores[0]  //com os números em ordem crescente, o elemento [0] será sempre o menor
         let maior = [0] //a variavel maior comecará em 0
         let soma = 0
-        for (let proximo in valores) {
-            soma += valores[proximo]    //soma todos os elementos do array
-            if (valores[proximo] > maior)
-                maior = valores[proximo]
+        for (let posicao in valores) {
+            soma += valores[posicao]    //soma todos os elementos do array
+            if (valores[posicao] > maior)
+                maior = valores[posicao]
         }
         media = soma / valores.length
         resultado.innerHTML = ''
