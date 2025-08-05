@@ -5,6 +5,5 @@ function parimpar(n) {
         return 'Impar!'
     }
 }
-
 let res = parimpar(220)
 console.log(res)
