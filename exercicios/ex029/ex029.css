@@ -29,14 +29,21 @@ main{
 select{
     margin-top: 10px;
     padding: 7px;
+    width: 200px;
 }
 
 input{
     margin-top: 10px;
+    padding: 3px;
 }
 
-p{
-    margin-top: 10px;
+#finalizar{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#limpar{
+    margin: 0px;
     margin-bottom: 10px;
 }
 
