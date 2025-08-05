@@ -1,4 +1,4 @@
-function fatorial(n) {
+function fatorial(n) {  //funçao recursiva
     if (n == 1) {
         return 1
     } else {
