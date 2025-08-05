@@ -5,3 +5,5 @@ num.sort()     //coloca os elementos em ordem crescente
 console.log(`Nosso vetor é o ${num}`)
 console.log(`O primeiro valor do vetor é ${num[0]}`)
 console.log(`O vetor tem ${num.length} posições`)
+let pos = num.indexOf(8)    //indica em qual posição está o elemento
+console.log(`O valor 8 está na posição ${pos}`)
