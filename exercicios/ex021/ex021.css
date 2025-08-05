@@ -31,12 +31,11 @@ form{
 }
 
 input{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-#contar{
-    margin-top: 10px;
-    padding: 3px;
+#botao{
+    margin-top: 5px;
 }
 
 p{
