@@ -5,7 +5,10 @@ function adicionarTarefa() {
         alert('[ERROR] Digite uma palavra válida')
     } else {
         let tarefa = inputTarefa.value
+        let lista = document.createElement('li')
         inputTarefa.focus()
-        mensagem.innerHTML += `- ${tarefa} <br>`
+        inputTarefa.value = ''
+        lista.textContent = tarefa
+        mensagem.appendChild(lista)
     }
 }
