@@ -67,8 +67,10 @@ ul#mensagem{
 }
 
 li{
-    margin: 5px;
+    margin: auto;
+    margin-top: 5px;
     padding: 3px;
+    width: 300px;
     border-radius: 5px;
     border: 2px solid #756553;
     text-align: center;
