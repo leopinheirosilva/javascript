@@ -1,3 +1,3 @@
 function limparConteudo() {
-    console.log('TESTE')
+    alert('TESTE')
 }
