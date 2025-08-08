@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gloria+Hallelujah&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, rgb(0, 0, 204), rgb(74, 74, 255));
+    font-family: "Mulish", cursive, sans-serif;
+}
+
+main{
+    position: relative;
+    background-color: white;
+    height: 500px;
+    width: 550px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1{
+    display: inline-block;
+    border-bottom: 3px solid #5252ff;
+    margin-bottom: 40px;
+    padding-right: 30px;
+}
+
+#limpar{
+    float: right;
+    background-color: #5252ff;
+    width: 35px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 7px;
+}
+
+#limpar i{
+    position: relative;
+    top: 2px;
+    font-size: 1.2em;
+    color: white;
+}
+
+#formulario{
+    columns: 2;
+}
+
+label{
+    display: block;
+    margin-bottom: 3px;
+}
+
+p{
+    margin: 20px 0px 5px 0px;
+}
+
+input{
+    width: 95%;
+    padding: 3px;
+    margin-bottom: 30px;
+    height: 30px;
+    border: 0px;
+    border-radius: 0px 7px 7px 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.116);
+}
+
+#genero input{
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 0px;
+    width: 20px;
+    height: 15px;
+    box-shadow: none;
+}
+
+#enviar{
+    position: absolute;
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+    background-color: #5252ff;
+    padding: 7px;
+    padding-bottom: 10px;
+    height: 45px;
+    font-family: "Mulish", cursive, arial;
+    font-weight: 600;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#enviar i{
+    position: relative;
+    font-size: 1.2em;
+    top: 2px;
+    margin-right: 3px;
+}

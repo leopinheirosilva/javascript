@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário com Validação</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <h1>Criar conta</h1>
-        <button></button>
+
+        <button id="limpar"><i class="material-icons">logout</i></button>
+
+        <div id="formulario">
+            <form action="#" method="post" autocomplete="off">
+                <label for="idnome">Primeiro nome</label>
+                <input type="tex" name="nome" id="idnome" placeholder="nome" required>
+                
+                <label for="idnasc">Nascimento</label>
+                <input type="date" name="nasc" id="idnasc" required>
+                
+                <label for="idpssw">Senha</label>
+                <input type="password" name="pssw" id="idpssw" placeholder="digite a senha" minlength="6" maxlength="12" required>
+
+                <label for="idsobrenome">Último nome</label>
+                <input type="text" name="sobrenome" id="idsobrenome" placeholder="sobrenome" required>
+
+                <label for="idemail">E-mail</label>
+                <input type="email" name="email" id="idemail" required placeholder="exemplo@gmail.com">
+
+                <label for="idconfirm">Confirmar senha</label>
+                <input type="password" name="confirm" id="idconfirm" placeholder="digite sua senha novamente" minlength="0" maxlength="12" required>
+            </form>
+        </div>
+        <div id="genero">
+             <form action="#" method="get">
+                    <p>Gênero</p>
+                    <input type="radio" name="sexo" id="fem" checked> Feminino
+                    <input type="radio" name="sexo" id="masc"> Masculino
+                    <input type="radio" name="sexo" id="outro"> Outro
+            </form>
+        </div>
+
+        <button id="enviar"><i class="material-icons">check</i>Criar conta</button>
     </main>
 </body>
 </html>
