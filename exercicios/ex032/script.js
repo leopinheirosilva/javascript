@@ -3,6 +3,6 @@ function limparConteudo() {
 }
 function criarConta() {
     let botaoEnviar = document.getElementById('enviar')
-    let enviar = botaoEnvair.value
+    let enviar = botaoEnviar.value
     enviar.innerHTML = 'conta criada com sucesso!'
 }
