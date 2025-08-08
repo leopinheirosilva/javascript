@@ -1,5 +1,5 @@
-let inputTarefa = document.getElementById('inputTarefa')
-let mensagem = document.getElementById('mensagem')
+const inputTarefa = document.getElementById('inputTarefa')
+const mensagem = document.getElementById('mensagem')
 let tarefaList = []
 function inLista(n, lista) {
     if (lista.indexOf(String(n)) != -1) {
