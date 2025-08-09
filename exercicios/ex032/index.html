@@ -15,22 +15,22 @@
 
         <div id="formulario">
             <form action="#" method="post" autocomplete="off">
-                <label for="idnome">Primeiro nome</label>
+                <label id="nome" for="idnome">Primeiro nome</label>
                 <input type="tex" name="nome" id="idnome" placeholder="nome" required>
                 
-                <label for="idnasc">Nascimento</label>
-                <input type="date" name="nasc" id="idnasc" required>
+                <label id="nascimento" for="idnascimento">Nascimento</label>
+                <input type="date" name="nasc" id="idnascimento" required>
                 
-                <label for="idpssw">Senha</label>
-                <input type="password" name="pssw" id="idpssw" placeholder="digite a senha" minlength="6" maxlength="12" required>
+                <label id="senha" for="idpassword">Senha</label>
+                <input type="password" name="pssw" id="idpassword" placeholder="digite a senha" minlength="6" maxlength="12" required>
 
-                <label for="idsobrenome">Último nome</label>
+                <label id="sobrenome" for="idsobrenome">Último nome</label>
                 <input type="text" name="sobrenome" id="idsobrenome" placeholder="sobrenome" required>
 
-                <label for="idemail">E-mail</label>
-                <input type="email" name="email" id="idemail" required placeholder="exemplo@gmail.com">
+                <label id="email" for="idmail">E-mail</label>
+                <input type="email" name="email" id="idmail" required placeholder="exemplo@gmail.com">
 
-                <label for="idconfirm">Confirmar senha</label>
+                <label id="confirma" for="idconfirm">Confirmar senha</label>
                 <input type="password" name="confirm" id="idconfirm" placeholder="digite sua senha novamente" minlength="0" maxlength="12" required>
             </form>
         </div>
@@ -43,7 +43,7 @@
             </form>
         </div>
 
-        <button id="enviar"><i class="material-icons">check</i>Criar conta</button>
+        <button onclick="criarConta()" id="enviar"><i class="material-icons">check</i>Criar conta</button>
     </main>
 
     <script src="script.js"></script>
