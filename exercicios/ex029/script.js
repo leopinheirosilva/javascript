@@ -22,7 +22,7 @@ function adicionar() {
         let item = document.createElement('option')
         item.text = `Valor ${num.value} adicionado.`
         lista.appendChild(item)
-        resultado.innerHTML = ''    //zera o conteúdo da variavel res sempre que um outro número é adicionado
+        resultado.innerHTML = ''    //zera o conteúdo da variavel resultado sempre que um outro número é adicionado
     } else {
         alert('Valor inválido ou já encontrado na lista.')
     }
