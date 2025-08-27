@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Tarefas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div>
-        <h1>Lista de Tarefas</h1>
+      <h1>Lista de Tarefas</h1>
 
-        <p>Adicione suas tarefas!</p>
+      <p>Adicione suas tarefas!</p>
 
-        <input type="text" name="tarefa" id="inputTarefa" placeholder=" Escreva a tarefa aqui!">
+      <input
+        type="text"
+        name="tarefa"
+        id="inputTarefa"
+        placeholder=" Escreva a tarefa aqui!"
+      />
 
-        <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+      <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
 
-        <p id="confirmTarefa"></p>
+      <p id="confirmTarefa"></p>
 
-        <ul id="mensagem" type = "none"></ul>
+      <ul id="mensagem" type="none"></ul>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
