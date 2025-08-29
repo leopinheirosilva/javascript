@@ -10,10 +10,10 @@ function inLista(n, lista) {
   }
 }
 function adicionarTarefa() {
-  if (inputTarefa.value.length == 0 || inLista(inputTarefa.value, tarefaList)) {
+  let tarefa = inputTarefa.value.trim(); //remove os espaços entre a string
+  if (tarefa == "" || inLista(tarefa, tarefaList)) {
     alert("[ERROR] Palavra inválida ou item já adicionado");
   } else {
-    let tarefa = inputTarefa.value.trim();
     let lista = document.createElement("li");
     tarefaList.push(tarefa);
     confirmTarefa.innerHTML = "Tarefa adicionada!";
