@@ -11,7 +11,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     width: 100vw;
-    height: 100vh;
     background-color: #383028;
     font-family: arial;
     font-size: 1.5em;
@@ -21,8 +20,9 @@ body {
 div {
     background-color: #CFB294;
     margin-top: 2rem;
+    padding-bottom: 3rem;
     width: 90vw;
-    height: 90vh;
+    height: 100%;
     border: 3px solid #6b5c4c;
     border-radius: 10px;
 }
@@ -47,23 +47,36 @@ input {
     border-radius: 5px;
 }
 
+div.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    padding-bottom: 0;
+}
+
 button {
-    display: block;
-    margin: auto;
+    margin: 0;
     width: 150px;
     height: 40px;
     margin-top: 10px;
     padding: 10px;
     border: 0px;
     border-radius: 5px;
-    background-color: darkred;
     color: white;
     font-size: 0.6em;
     box-shadow: 2px 2px 5px black;
 }
 
+button.adicionar {
+    background-color: rgb(83, 138, 83);
+}
+
+button.limpar {
+    background-color: #883a3a;
+}
+
 button:hover {
-    color: rgb(253, 220, 220);
     cursor: pointer;
     width: 153px;
     height: 43px;
@@ -75,12 +88,43 @@ ul#mensagem {
 }
 
 li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
     margin: 0 auto;
     margin-top: 5px;
-    padding: 3px;
-    width: 300px;
-    border-radius: 5px;
-    border: 2px solid #756553;
-    text-align: center;
+    padding: 1rem;
+    width: 70vw;
+    border-radius: 10px;
+    border: 1px solid #756553;
     background-color: white;
+}
+
+button.remover {
+    width: 80px;
+    background-color: #883a3a;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+button.editar {
+    width: 60px;
+    background-color: #1c424e;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+button.remover:hover {
+    height: 40px;
+    background-color: darkred;
+    color: white;
+}
+
+button.editar:hover {
+    height: 40px;
+    background-color: #0c282e;
+    color: white;
 }

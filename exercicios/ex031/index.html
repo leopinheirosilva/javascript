@@ -20,7 +20,11 @@
         placeholder=" Escreva a tarefa aqui!"
       />
 
-      <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+      <div class="botoes">
+        <button onclick="adicionarTarefa()" class="adicionar">Adicionar Tarefa</button>
+        
+        <button onclick="limparConteudo()" class="limpar">Limpar</button>
+      </div>
 
       <p id="confirmTarefa"></p>
 
