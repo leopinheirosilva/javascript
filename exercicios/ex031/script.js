@@ -14,12 +14,20 @@ function adicionarTarefa() {
   if (tarefa == "" || inLista(tarefa, tarefaList)) {
     alert("[ERROR] Palavra inválida ou item já adicionado");
   } else {
-    let lista = document.createElement("li");
-    tarefaList.push(tarefa);
     confirmTarefa.innerHTML = "Tarefa adicionada!";
-    inputTarefa.focus();
-    inputTarefa.value = "";
-    lista.textContent = tarefa;
-    mensagem.appendChild(lista);
+    tarefaList.push(tarefa);
+    renderizarTarefa(); //chama a funcao renderizarTarefa
   }
+
+  function renderizarTarefa() {
+    mensagem.innerHTML = "";
+    let i = 0;
+    for (i; i < tarefaList.length; i++) {
+      let lista = document.createElement("li");
+      lista.textContent = tarefaList[i];
+      mensagem.appendChild(lista);
+    }
+  }
+  inputTarefa.value = "";
+  inputTarefa.focus();
 }

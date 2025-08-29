@@ -33,7 +33,9 @@ p {
 }
 
 input {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
     height: 40px;
     border: 3px solid #756553;
     border-radius: 5px;

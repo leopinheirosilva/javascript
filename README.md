@@ -32,5 +32,3 @@ Curso de JavaScript e ECMAScript do CursoemVideo
 <a href="https://leopinheirosilva.github.io/javascript/exercicios/ex029/" target="_blank" rel ="external">Execultar o exercicio 029</a>
 
 <a href="https://leopinheirosilva.github.io/javascript/exercicios/ex031/" target="_blank" rel ="external">Execultar o exercicio 031</a>
-
-<a href="https://leopinheirosilva.github.io/javascript/exercicios/ex032/" target="_blank" rel ="external">Execultar o exercicio 032</a>
