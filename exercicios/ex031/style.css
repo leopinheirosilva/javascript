@@ -88,10 +88,6 @@ ul#mensagem {
 }
 
 li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
     margin: 0 auto;
     margin-top: 5px;
     padding: 1rem;
@@ -103,16 +99,21 @@ li {
 
 button.remover {
     width: 80px;
+    height: 100%;
     background-color: #883a3a;
     margin: 0;
+    margin-left: 5px;
+    float: right;
     border-radius: 10px;
     box-shadow: none;
 }
 
 button.editar {
     width: 60px;
+    height: 100%;
     background-color: #1c424e;
     margin: 0;
+    float: right;
     border-radius: 10px;
     box-shadow: none;
 }

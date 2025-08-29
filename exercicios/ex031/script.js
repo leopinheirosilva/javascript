@@ -53,7 +53,11 @@ function editarTarefa(i) {
   }
 }
 function limparConteudo() {
-  tarefaList.length = 0;
-  renderizarTarefa();
-  confirmTarefa.innerHTML = "Lista de tarefas limpa!";
+  if (tarefaList.length == 0) {
+    alert("A lista já está vazia!");
+  } else {
+    tarefaList.length = 0;
+    renderizarTarefa();
+    confirmTarefa.innerHTML = "Lista de tarefas limpa!";
+  }
 }
