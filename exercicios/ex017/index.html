@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio 02</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Verificador de Idade</h1>
+      <h1>Verificador de Idade</h1>
     </header>
 
     <main>
-        <div>
-            <label for="ano">Ano de Nascimento:</label>
-            <input type="number" name="ano" id="ano">
-        </div>
+      <div>
+        <label for="ano">Ano de Nascimento:</label>
+        <input type="number" name="ano" id="ano" />
+      </div>
 
-        <div> 
-            <input type="radio" name="sexo" id="M" checked>
-            <label for="M"> Masculino</label>
-            
-            <input type="radio" name="sexo" id="F"> 
-            <label for="F">Feminino</label>
-        </div>
-        
-        <input id="verificar" type="button" value="Verificar" onclick="verificar()">
+      <div>
+        <input type="radio" name="sexo" id="M" checked />
+        <label for="M"> Masculino</label>
 
-        <div id="res">
-            <p>Preencha os dados acima para ver o resultado!</p>
-        </div>
+        <input type="radio" name="sexo" id="F" />
+        <label for="F">Feminino</label>
+      </div>
+
+      <input
+        id="verificar"
+        type="button"
+        value="Verificar"
+        onclick="verificar()"
+      />
+
+      <div id="res">
+        <p>Preencha os dados acima para ver o resultado!</p>
+      </div>
     </main>
 
     <footer>
-        <a href="https://github.com/leopinheirosilva" target="_blank"> &copy; Leonardo Pinheiro</a>
+      <a href="https://github.com/leopinheirosilva" target="_blank">
+        &copy; Leonardo Pinheiro</a
+      >
     </footer>
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>

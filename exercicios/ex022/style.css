@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     font-family: Arial;
     background-color: rgb(57, 113, 185);
 }
 
-h1{
+h1 {
     color: white;
     text-align: center;
     margin: 30px;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
 }
 
-main{
+main {
     background-color: white;
     width: 500px;
     margin: auto;
@@ -26,21 +26,21 @@ main{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
 }
 
-select{
+select {
     margin-top: 10px;
     padding: 7px;
 }
 
-input{
+input {
     margin-top: 10px;
 }
 
-p{
+p {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-footer{
+footer {
     color: white;
     text-align: center;
     margin-top: 15px;

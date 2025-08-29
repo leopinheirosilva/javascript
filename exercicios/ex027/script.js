@@ -1,8 +1,9 @@
-function fatorial(n) {  //funçao recursiva
-    let fat = 1
-    for (let c = n; c > 1; c--) {
-        fat *= c
-    }
-    return fat
+function fatorial(n) {
+  //funçao recursiva
+  let fat = 1;
+  for (let c = n; c > 1; c--) {
+    fat *= c;
+  }
+  return fat;
 }
-console.log(fatorial(5))
+console.log(fatorial(5));

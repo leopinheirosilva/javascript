@@ -1,49 +1,59 @@
 function verificar() {
-    var data = new Date()
-    var anoAtual = data.getFullYear()
-    var ano = document.getElementById('ano')
-    var res = document.getElementById('res')
-    if (ano.value.length == 0 || Number(ano.value) > anoAtual) {
-        alert('Verifique os dados e tente novamente')
-    } else {
-        var sexo = document.getElementsByName('sexo') //[0,1]
-        var genero = ''                                  //declaração da variável vazia
-        var idade = anoAtual - Number(ano.value)
-        var img = document.createElement('img') //criaçao de uma tag img
-        img.setAttribute('id', 'foto')          //definiu a tag img com o id 'foto'
-        if (sexo[0].checked) {  //verifica qual caixa está selecionada no form sexo
-            genero = 'Homem'
-            if (idade >= 0 && idade < 10) {
-                img.setAttribute('src', 'midias/crianca-m.png')
-                img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
-            } else if (idade < 21) {
-                img.setAttribute('src', 'midias/jovem-m.png')
-                img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
-            } else if (idade < 50) {
-                img.setAttribute('src', 'midias/adulto-m.png')
-                img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
-            } else {
-                img.setAttribute('src', 'midias/idoso-m.png')
-                img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
-            }
-        } else if (sexo[1].checked) {  //verifica qual caixa está selecionada no form sexo
-            genero = 'Mulher'
-            if (idade >= 0 && idade < 10) {
-                img.setAttribute('src', 'midias/crianca-f.png')
-                img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
-            } else if (idade < 21) {
-                img.setAttribute('src', 'midias/jovem-f.png')
-                img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
-            } else if (idade < 50) {
-                img.setAttribute('src', 'midias/adulto-f.png')
-                img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
-            } else {
-                img.setAttribute('src', 'midias/idoso-f.png')
-                img.style.cssText = 'display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px'
-            }
-        }
-        res.style.textAlign = 'center'
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
-        res.appendChild(img)    //adiciona a variavel img
+  var data = new Date();
+  var anoAtual = data.getFullYear();
+  var ano = document.getElementById("ano");
+  var res = document.getElementById("res");
+  if (ano.value.length == 0 || Number(ano.value) > anoAtual) {
+    alert("Verifique os dados e tente novamente");
+  } else {
+    var sexo = document.getElementsByName("sexo"); //[0,1]
+    var genero = ""; //declaração da variável vazia
+    var idade = anoAtual - Number(ano.value);
+    var img = document.createElement("img"); //criaçao de uma tag img
+    img.setAttribute("id", "foto"); //definiu a tag img com o id 'foto'
+    if (sexo[0].checked) {
+      //verifica qual caixa está selecionada no form sexo
+      genero = "Homem";
+      if (idade >= 0 && idade < 10) {
+        img.setAttribute("src", "midias/crianca-m.png");
+        img.style.cssText =
+          "display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px";
+      } else if (idade < 21) {
+        img.setAttribute("src", "midias/jovem-m.png");
+        img.style.cssText =
+          "display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px";
+      } else if (idade < 50) {
+        img.setAttribute("src", "midias/adulto-m.png");
+        img.style.cssText =
+          "display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px";
+      } else {
+        img.setAttribute("src", "midias/idoso-m.png");
+        img.style.cssText =
+          "display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px";
+      }
+    } else if (sexo[1].checked) {
+      //verifica qual caixa está selecionada no form sexo
+      genero = "Mulher";
+      if (idade >= 0 && idade < 10) {
+        img.setAttribute("src", "midias/crianca-f.png");
+        img.style.cssText =
+          "display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px";
+      } else if (idade < 21) {
+        img.setAttribute("src", "midias/jovem-f.png");
+        img.style.cssText =
+          "display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px";
+      } else if (idade < 50) {
+        img.setAttribute("src", "midias/adulto-f.png");
+        img.style.cssText =
+          "display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px";
+      } else {
+        img.setAttribute("src", "midias/idoso-f.png");
+        img.style.cssText =
+          "display: block; margin:auto; width: 250px; heigh: 250px; padding-top: 10px";
+      }
     }
+    res.style.textAlign = "center";
+    res.innerHTML = `Detectamos ${genero} com ${idade} anos.`;
+    res.appendChild(img); //adiciona a variavel img
+  }
 }
