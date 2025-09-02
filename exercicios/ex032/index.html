@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>criar conta</h1>
+        <button><i class="fa-solid fa-right-to-bracket"></i></button>
+      </header>
+      <div class="container">
+        <form action="#">
+          <div class="container_input">
+            <label for="input-name">Nome</label>
+            <div class="input-area">
+              <input type="text" id="input-name" name="name" />
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="container_input">
+            <label for="input-surname">Sobrenome</label>
+            <div class="input-area">
+              <input type="text" id="input-surname" name="surname" />
+              <i class="fa-regular fa-user"></i>
+            </div>
+          </div>
+          <div class="container_input">
+            <label for="input-birthdate">Nascimento</label>
+            <div class="input-area">
+              <input type="date" id="input-birthdate" name="input-birthdate" />
+            </div>
+          </div>
+          <div class="container_input">
+            <label for="input-email">Email</label>
+            <div class="input-area">
+              <input type="email" id="input-email" name="email" />
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+          <div class="container_input">
+            <label for="input-password">Senha</label>
+            <div class="input-area">
+              <input type="password" id="input-password" name="password" />
+              <i class="fa-regular fa-eye-slash"></i>
+            </div>
+          </div>
+          <div class="container_input">
+            <label for="input-confirm-password">Confirmar Senha</label>
+            <div class="input-area">
+              <input
+                type="password"
+                id="input-confirm-password"
+                name="confirm-password"
+              />
+              <i class="fa-regular fa-eye-slash"></i>
+            </div>
+          </div>
+          <div class="input_radio">
+            <label for="input-gender">Gênero</label>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="gender" value="male" />
+                Masculino
+              </label>
+              <label>
+                <input type="radio" name="gender" value="female" />
+                Feminino
+              </label>
+              <label>
+                <input type="radio" name="gender" value="other" />
+                Outro
+              </label>
+            </div>
+          </div>
+          <button> <i class="fa-solid fa-check"></i> criar conta </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
