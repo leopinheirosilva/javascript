@@ -19,82 +19,100 @@
         <h1>Criar conta</h1>
         <a href="#" class="btn"><i class="fa-solid fa-right-to-bracket"></i></a>
       </header>
-        <form action="#">
-            <div class="grid-container">
-                <div class="container_input">
-                    <label for="input-name">Nome</label>
-                    <div class="input-area">
-                        <input type="text" id="input-name" name="name" placeholder="Digite seu nome" />
-                        <i class="fa-regular fa-user"></i>
-                    </div>
-                    <p class="mensagem_erro"></p>
-                </div>
-                <div class="container_input">
-                    <label for="input-surname">Sobrenome</label>
-                    <div class="input-area">
-                        <input type="text" id="input-surname" name="surname" placeholder="Digite seu sobrenome" />
-                        <i class="fa-regular fa-user"></i>
-                    </div>
-                    <p class="mensagem_erro"></p>
-                </div>
-                <div class="container_input">
-                    <label for="input-birthdate">Nascimento</label>
-                    <div class="input-area">
-                        <input type="date" id="input-birthdate" name="input-birthdate" class="date" />
-                    </div>
-                    <p class="mensagem_erro"></p>
-                </div>
-                <div class="container_input">
-                    <label for="input-email">Email</label>
-                    <div class="input-area">
-                        <input type="email" id="input-email" name="email" placeholder="Digite seu email" />
-                        <i class="fa-regular fa-envelope"></i>
-                    </div>
-                    <p class="mensagem_erro"></p>
-                </div>
-                <div class="container_input">
-                    <label for="input-password">Senha</label>
-                    <div class="input-area">
-                        <input 
-                            type="password" 
-                            id="input-password" 
-                            name="password" 
-                            placeholder="Digite sua senha"  
-                            minlength="6" 
-                            maxlength="12"  
-                        />
-                        <i class="fa-regular fa-eye-slash password-icon"></i>
-                    </div>
-                    <p class="mensagem_erro"></p>
-                </div>
-                <div class="container_input">
-                    <label for="input-confirm-password">Confirmar Senha</label>
-                    <div class="input-area">
-                        <input
-                            type="password"
-                            id="input-confirm-password"
-                            name="confirm-password"
-                            placeholder="Confirme sua senha"
-                            minlength="6"
-                            maxlength="12"
-                        />
-                        <i class="fa-regular fa-eye-slash password-icon"></i>
-                    </div>
-                    <p class="mensagem_erro"></p>
-                </div>
+      <form action="#">
+        <div class="grid-container">
+          <div class="container_input">
+            <label for="input-name">Nome</label>
+            <div class="input-area">
+              <input type="text" id="input-name" name="name" placeholder="Digite seu nome"/>
+              <i class="fa-regular fa-user"></i>
             </div>
-            <div class="input_radio">
-                <p>Gênero</p>
-                <input type="radio" id="gender-male" name="gender" value="male" checked />
-                <label for="gender-male">Masculino</label>
-                <input type="radio" id="gender-female" name="gender" value="female" />
-                <label for="gender-female">Feminino</label>
-                <input type="radio" id="gender-other" name="gender" value="other" />
-                <label for="gender-other">Outro</label>
-                <p class="mensagem_erro"></p>
+            <span class="mensagem_erro"></span>
+          </div>
+          <div class="container_input">
+            <label for="input-surname">Sobrenome</label>
+            <div class="input-area">
+              <input type="text" id="input-surname" name="surname" placeholder="Digite seu sobrenome"/>
+              <i class="fa-regular fa-user"></i>
             </div>
-            <button id="btn-submit" class="cadastro" onclick="criarConta()"> <i class="fa-solid fa-check"></i> Criar conta </button>
-        </form>
+            <span class="mensagem_erro"></span>
+          </div>
+          <div class="container_input">
+            <label for="input-birthdate">Nascimento</label>
+            <div class="input-area">
+              <input type="date" id="input-birthdate" name="input-birthdate" class="date"/>
+            </div>
+            <span class="mensagem_erro"></span>
+          </div>
+          <div class="container_input">
+            <label for="input-email">Email</label>
+            <div class="input-area">
+              <input
+                type="email"
+                id="input-email"
+                name="email"
+                placeholder="Digite seu email"
+              />
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <span class="mensagem_erro"></span>
+          </div>
+          <div class="container_input">
+            <label for="input-password">Senha</label>
+            <div class="input-area">
+              <input
+                type="password"
+                id="input-password"
+                name="password"
+                placeholder="Digite sua senha"
+                minlength="6"
+                maxlength="12"
+              />
+              <i class="fa-regular fa-eye-slash password-icon"></i>
+            </div>
+            <span class="mensagem_erro"></span>
+          </div>
+          <div class="container_input">
+            <label for="input-confirm-password">Confirmar Senha</label>
+            <div class="input-area">
+              <input
+                type="password"
+                id="input-confirm-password"
+                name="confirm-password"
+                placeholder="Confirme sua senha"
+                minlength="6"
+                maxlength="12"
+              />
+              <i class="fa-regular fa-eye-slash password-icon"></i>
+            </div>
+            <span class="mensagem_erro"></span>
+          </div>
+        </div>
+        <div class="input_radio">
+          <p>Gênero</p>
+          <input
+            type="radio"
+            id="gender-male"
+            name="gender"
+            value="male"
+            checked
+          />
+          <label for="gender-male">Masculino</label>
+          <input type="radio" id="gender-female" name="gender" value="female" />
+          <label for="gender-female">Feminino</label>
+          <input type="radio" id="gender-other" name="gender" value="other" />
+          <label for="gender-other">Outro</label>
+          <p class="mensagem_erro"></p>
+        </div>
+        <button
+          type="submit"
+          id="btn-submit"
+          class="cadastro"
+          onclick="criarConta()"
+        >
+          <i class="fa-solid fa-check"></i> Criar conta
+        </button>
+      </form>
     </main>
     <script src="script.js"></script>
   </body>

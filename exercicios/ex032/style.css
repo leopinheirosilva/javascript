@@ -99,10 +99,11 @@ input.date {
     width: 100%;
 }
 
-p.mensagem_erro {
+span.mensagem_erro {
     color: red;
     font-size: 0.8em;
     margin-top: 5px;
+    max-width: 200px;
 }
 
 div.input_radio {

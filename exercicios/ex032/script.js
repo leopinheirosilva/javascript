@@ -4,39 +4,58 @@ passowrdIcons.forEach((icon) => {
   icon.addEventListener("click", function () {
     const input = this.parentElement.querySelector("input");
     input.type = input.type === "password" ? "text" : "password"; //condicao ternaria
-    this.classList.toggle("fa-solid fa-eye"); //adiciona ou remove a classe
+    this.classList.toggle("fa-eye");
   });
 });
 //codigo para validacao do formulario
-const mensagemErro = document.querySelectorAll(".mensagem_erro");
-const cadastrar = document.getElementById("btn-submit");
-const nome = document.getElementById("input-name").value;
-const sobrenome = document.getElementById("input-surname").value;
-const nascimento = document.getElementById("input-birthdate").value;
-const email = document.getElementById("input-email").value;
-const senha = document.getElementById("input-password").value;
-const confirmarSenha = document.getElementById("input-confirm-password").value;
-const data = new Date();
-const currentYear = data.getFullYear();
-function criarConta() {
-    if (nome.length == 0) {
-        mensagemErro[0].textContent = "campo obrigatório!";
-    }
-    if (sobrenome.length == 0) {
-        mensagemErro[1].textContent = "campo obrigatório!";
-    }
-    if (nascimento.length == 0 || nascimento >= currentYear) {
-        mensagemErro[2].textContent = "data inválida!";
-    }
-    if (email.length == 0 || !email.includes("@")) {
-        mensagemErro[3].textContent = "email inválido!";
-    }
-    if (senha.length == 0) {
-        mensagemErro[4].textContent = "campo obrigatório!";
-    }
-    if (confirmarSenha.length == 0 || confirmarSenha !== senha) {
-        mensagemErro[5].textContent = "senhas não conferem!";
-    } else {
-        cadastrar.innerHTML = "Conta criada com sucesso!";
-    }
-}
+const form = document.querySelector("form");
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // Impede o envio do formulário
+  // Aqui você pode adicionar a lógica de validação
+  function isEmpty(value) {
+    return value === "";
+  }
+  const error = document.getElementsByClassName("mensagem_erro");
+  const errorIcon = '<i class="fa-solid fa-circle-exclamation"></i>';
+  const data = new Date();
+  const currentDate = data.getFullYear();
+  const name = document.getElementById("input-name").value;
+  if (isEmpty(name)) {
+    error[0].innerHTML = ` ${errorIcon} Campo obrigatório!`;
+  } else {
+    error[0].innerHTML = "";
+  }
+  const surname = document.getElementById("input-surname").value;
+  if (isEmpty(surname)) {
+    error[1].innerHTML = ` ${errorIcon} Campo obrigatório!`;
+  } else {
+    error[1].innerHTML = "";
+  }
+  const birthdate = document.getElementById("input-birthdate").value;
+  if (isEmpty(birthdate) || birthdate > currentDate) {
+    error[2].innerHTML = ` ${errorIcon} Campo obrigatório!`;
+  }
+  else {
+    error[2].innerHTML = "";
+  }
+  const email = document.getElementById("input-email").value;
+  if (isEmpty(email)) {
+    error[3].innerHTML = ` ${errorIcon} Campo obrigatório!`;
+  } else {
+    error[3].innerHTML = "";
+  }
+  const password = document.getElementById("input-password").value;
+  if (isEmpty(password)) {
+    error[4].innerHTML = ` ${errorIcon} Campo obrigatório!`;
+  } else {
+    error[4].innerHTML = "";
+  }
+  const confirmPassword = document.getElementById(
+    "input-confirm-password"
+  ).value;
+  if (isEmpty(confirmPassword)) {
+    error[5].innerHTML = ` ${errorIcon} Campo obrigatório!`;
+  } else {
+    error[5].innerHTML = "";
+  }
+});
