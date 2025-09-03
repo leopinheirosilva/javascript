@@ -24,7 +24,7 @@
           <div class="container_input">
             <label for="input-name">Nome</label>
             <div class="input-area">
-              <input type="text" id="input-name" name="name" placeholder="Digite seu nome"/>
+              <input type="text" id="input-name" class="input-control" name="name" placeholder="Digite seu nome"/>
               <i class="fa-regular fa-user"></i>
             </div>
             <span class="mensagem_erro"></span>
@@ -32,7 +32,7 @@
           <div class="container_input">
             <label for="input-surname">Sobrenome</label>
             <div class="input-area">
-              <input type="text" id="input-surname" name="surname" placeholder="Digite seu sobrenome"/>
+              <input type="text" id="input-surname" class="input-control" name="surname" placeholder="Digite seu sobrenome"/>
               <i class="fa-regular fa-user"></i>
             </div>
             <span class="mensagem_erro"></span>
@@ -40,7 +40,7 @@
           <div class="container_input">
             <label for="input-birthdate">Nascimento</label>
             <div class="input-area">
-              <input type="date" id="input-birthdate" name="input-birthdate" class="date"/>
+              <input type="date" id="input-birthdate" class="input-control date" name="input-birthdate" />
             </div>
             <span class="mensagem_erro"></span>
           </div>
@@ -51,6 +51,7 @@
                 type="email"
                 id="input-email"
                 name="email"
+                class="input-control"
                 placeholder="Digite seu email"
               />
               <i class="fa-regular fa-envelope"></i>
@@ -63,10 +64,9 @@
               <input
                 type="password"
                 id="input-password"
+                class="input-control"
                 name="password"
                 placeholder="Digite sua senha"
-                minlength="6"
-                maxlength="12"
               />
               <i class="fa-regular fa-eye-slash password-icon"></i>
             </div>
@@ -78,10 +78,9 @@
               <input
                 type="password"
                 id="input-confirm-password"
+                class="input-control"
                 name="confirm-password"
                 placeholder="Confirme sua senha"
-                minlength="6"
-                maxlength="12"
               />
               <i class="fa-regular fa-eye-slash password-icon"></i>
             </div>
@@ -93,23 +92,19 @@
           <input
             type="radio"
             id="gender-male"
+            class="input-control"
             name="gender"
             value="male"
             checked
           />
           <label for="gender-male">Masculino</label>
-          <input type="radio" id="gender-female" name="gender" value="female" />
+          <input type="radio" id="gender-female" class="input-control" name="gender" value="female" />
           <label for="gender-female">Feminino</label>
-          <input type="radio" id="gender-other" name="gender" value="other" />
+          <input type="radio" id="gender-other" class="input-control" name="gender" value="other" />
           <label for="gender-other">Outro</label>
           <p class="mensagem_erro"></p>
         </div>
-        <button
-          type="submit"
-          id="btn-submit"
-          class="cadastro"
-          onclick="criarConta()"
-        >
+        <button type="submit" id="btn-submit" class="cadastro">
           <i class="fa-solid fa-check"></i> Criar conta
         </button>
       </form>

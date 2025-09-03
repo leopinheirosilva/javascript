@@ -95,8 +95,34 @@ input {
     cursor: pointer;
 }
 
+div.container_input.invalid label {
+    color: red;
+}
+
+div.container_input.invalid .input-area {
+    outline: 1px solid red;
+}
+
 input.date {
     width: 100%;
+}
+
+.input-area .password-icon:hover {
+    color: #828288;
+    cursor: pointer;
+}
+
+.input-area:focus-within {
+    outline: 2px solid #6366EA;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    color: black;
+}
+
+input[type="radio"] {
+    accent-color: #6366EA;
 }
 
 span.mensagem_erro {
@@ -138,7 +164,6 @@ button:hover {
 @media screen and (max-width: 600px) {
     main {
         width: 100vw;
-        height: 100vh;
         border-radius: 0px;
     }
     div.grid-container {
