@@ -170,7 +170,7 @@ button:hover {
     div.grid-container {
         grid-template-columns: 1fr;
     }
-    .input-area {
+    .input-area input {
         width: 100%;
     }
     .input-area i {
