@@ -170,6 +170,9 @@ button:hover {
     div.grid-container {
         grid-template-columns: 1fr;
     }
+    .input-area {
+        width: 100%;
+    }
     .input-area i {
         float: right;
     }
