@@ -93,7 +93,7 @@ li {
     margin: 0 auto;
     margin-top: 5px;
     padding: 1rem;
-    width: 70vw;
+    width: 50%;
     border-radius: 10px;
     border: 1px solid #756553;
     background-color: white;
@@ -114,22 +114,18 @@ button.editar {
     width: 60px;
     height: 100%;
     background-color: #1c424e;
-    margin: 0;
+    margin: 0 auto;
     float: right;
     border-radius: 10px;
     box-shadow: none;
 }
 
 button.remover:hover {
-    height: 40px;
     background-color: darkred;
-    color: white;
 }
 
 button.editar:hover {
-    height: 40px;
     background-color: #0c282e;
-    color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -141,6 +137,9 @@ button.editar:hover {
     }
     button.remover, button.editar {
         width: 45%;
+        height: 40px;
+        margin: 0 auto;
+        float: none;
     }
 
 }

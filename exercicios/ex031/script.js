@@ -24,10 +24,12 @@ function renderizarTarefa() {
   for (let i = 0; i < tarefaList.length; i++) {
     let lista = document.createElement("li");
     lista.textContent = tarefaList[i];
+    //criando botao remover
     let botaoRemover = document.createElement("button");
     botaoRemover.className = "remover";
     botaoRemover.textContent = "remover";
     botaoRemover.onclick = () => removerTarefa(i); //chamando funcao removerTarefa
+    //criando botao editar
     let botaoEditar = document.createElement("button");
     botaoEditar.className = "editar";
     botaoEditar.textContent = "editar";
