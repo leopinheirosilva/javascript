@@ -147,24 +147,15 @@ button.editar:hover {
 
 @media screen and (max-width: 600px) {
     h1{
-        font-size: 2.7rem;
+        font-size: 2.4rem;
     }
     li {
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         justify-content: space-between;
     }
     div.botoes_lista {
-        flex-flow: column nowrap;
-        flex-basis: 0;
-    }
-
-}
-@media screen and (max-width: 400px) {
-    li {
-        flex-flow: column nowrap;
-    }
-    div.botoes_lista {
         flex-flow: row nowrap;
+        flex-basis: 0;
     }
 
 }
