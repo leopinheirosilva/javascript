@@ -90,13 +90,30 @@ ul#mensagem {
 }
 
 li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
     margin: 0 auto;
     margin-top: 5px;
     padding: 1rem;
-    width: 50%;
+    width: 70%;
     border-radius: 10px;
     border: 1px solid #756553;
     background-color: white;
+}
+
+div.botoes_lista {
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px;
+    width: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
 }
 
 button.remover {
@@ -111,7 +128,7 @@ button.remover {
 }
 
 button.editar {
-    width: 60px;
+    width: 80px;
     height: 100%;
     background-color: #1c424e;
     margin: 0 auto;
@@ -130,16 +147,21 @@ button.editar:hover {
 
 @media screen and (max-width: 600px) {
     li {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        gap: 5px;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
-    button.remover, button.editar {
-        width: 45%;
-        height: 40px;
-        margin: 0 auto;
-        float: none;
+    div.botoes_lista {
+        flex-flow: column nowrap;
+        flex-basis: 0;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    li {
+        flex-flow: column nowrap;
+    }
+    div.botoes_lista {
+        flex-flow: row nowrap;
     }
 
 }

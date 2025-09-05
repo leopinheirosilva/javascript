@@ -28,6 +28,10 @@ function renderizarTarefa() {
   for (let i = 0; i < tarefaList.length; i++) {
     let lista = document.createElement("li"); //criando elemento li
     lista.textContent = tarefaList[i];
+    //criando div de botoes
+    let divBotoes = document.createElement("div");
+    divBotoes.className = "botoes_lista";
+    lista.appendChild(divBotoes);
     //criando botao remover
     let botaoRemover = document.createElement("button");
     botaoRemover.className = "remover";
@@ -38,9 +42,11 @@ function renderizarTarefa() {
     botaoEditar.className = "editar";
     botaoEditar.textContent = "editar";
     botaoEditar.onclick = () => editarTarefa(i); //chamando funcao editarTarefa
-    //adicionando os botoes na lista
-    lista.appendChild(botaoRemover);
-    lista.appendChild(botaoEditar);
+    //adicionando os botoes na div
+    divBotoes.appendChild(botaoRemover);
+    divBotoes.appendChild(botaoEditar);
+    //adicionando a div na lista
+    lista.appendChild(divBotoes);
     //adicionando a lista na mensagem
     mensagem.appendChild(lista);
   }
