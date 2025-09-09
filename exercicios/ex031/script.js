@@ -31,7 +31,6 @@ function renderizarTarefa() {
     //criando div de botoes
     let divBotoes = document.createElement("div");
     divBotoes.className = "botoes_lista";
-    lista.appendChild(divBotoes);
     //criando botao remover
     let botaoRemover = document.createElement("button");
     botaoRemover.className = "remover";
